@@ -1,0 +1,2 @@
+rootProject.name = "android-moviles-2020-b"
+include ':app'
