@@ -317,7 +317,7 @@ class Suma(
         fun agregarHiatiorial(valorNuevaSuma: Int){
             //this.historialSuma.add(valorNuevaSuma)
             historialSuma.add(valorNuevaSuma)
-            println(historialSuma)
+            println("Este es el historial" + historialSuma)
         }
     }
 }

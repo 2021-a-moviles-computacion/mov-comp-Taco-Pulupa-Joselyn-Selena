@@ -1,0 +1,2 @@
+Piña,0.25,2021/03/25,20,Camila,Fruta
+Tallarin,2.52,2022/02/10,0,Maria,Fideos
