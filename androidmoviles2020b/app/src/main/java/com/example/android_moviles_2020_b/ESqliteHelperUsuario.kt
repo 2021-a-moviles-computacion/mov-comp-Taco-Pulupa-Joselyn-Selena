@@ -17,9 +17,9 @@ class ESqliteHelperUsuario(
     override fun onCreate(db: SQLiteDatabase?) {
         val scriptCrearTablaUsuario =
             """
-                CREATE TABLE USUARIO (
-                id INTERGER PRIMARY KEY AUTOINCREMENT,
-                nombre VARCHAR(50),
+                create table USUARIO(
+                id integer primary key autoincrement,
+                nombre varchar(50),
                 descripcion varchar(50)
                 )
             """.trimIndent()
@@ -44,11 +44,12 @@ class ESqliteHelperUsuario(
                 valoresAGuardar
             )
         conexionEscritura.close()
+        println("vale metodo crear")
         return  if (resultadoEscritura.toInt() == 1) false else true
     }
 
     fun consultarUsuarioPorId(id : Int): EUsuarioBDD{
-        val scriptConsultarUsuario = "SELECT * FROM USUARIO WHERE ID = ${id}"
+        val scriptConsultarUsuario = "SELECT * FROM USUARIO WHERE id = ${id}"
 
         val baseDatosLEctura = readableDatabase
         val resultaConsultaLectura = baseDatosLEctura.rawQuery(
@@ -75,6 +76,7 @@ class ESqliteHelperUsuario(
         }
         resultaConsultaLectura.close()//Cerrar siempre las consultas
         baseDatosLEctura.close()
+        println("vale metodo consultar")
         return usuarioEncontrado
 
     }
@@ -90,6 +92,7 @@ class ESqliteHelperUsuario(
             )
             )
         conexionEscritura.close()
+        println("vale metodo eliminar")
         return if(resultadoEliminacion.toInt() == -1) false else true
     }
 
@@ -112,6 +115,7 @@ class ESqliteHelperUsuario(
                 ) //Parametros consultar Where
             )
         conexionEscritura.close()
+        println("vale  metodo actualizar")
         return if (resultadoActualizacion == -1) false else true
     }
 
