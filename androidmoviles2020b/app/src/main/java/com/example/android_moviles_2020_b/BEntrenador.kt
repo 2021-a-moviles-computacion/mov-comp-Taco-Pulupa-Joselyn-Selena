@@ -6,12 +6,11 @@ import android.os.Parcelable
 class BEntrenador(
     val nombre: String?,
     val descripcion: String?,
-    //val liga: Dliga?
+    val liga: Dliga? = null,
 ) :Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
-
     ) {
     }
 
@@ -31,7 +30,6 @@ class BEntrenador(
         //}
         parcel?.writeString(nombre)
         parcel?.writeString(descripcion)
-
     }
 
     companion object CREATOR : Parcelable.Creator<BEntrenador> {

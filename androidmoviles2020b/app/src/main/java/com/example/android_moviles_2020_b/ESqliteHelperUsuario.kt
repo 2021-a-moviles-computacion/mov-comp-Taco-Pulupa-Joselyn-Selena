@@ -23,7 +23,7 @@ class ESqliteHelperUsuario(
                 descripcion varchar(50)
                 )
             """.trimIndent()
-        Log.i("bbd","Creando la tabla de usuario")
+        Log.i("bdd","Creando la tabla de usuario")
         db?.execSQL(scriptCrearTablaUsuario)
 
     }
@@ -44,7 +44,6 @@ class ESqliteHelperUsuario(
                 valoresAGuardar
             )
         conexionEscritura.close()
-        println("vale metodo crear")
         return  if (resultadoEscritura.toInt() == 1) false else true
     }
 
@@ -76,7 +75,6 @@ class ESqliteHelperUsuario(
         }
         resultaConsultaLectura.close()//Cerrar siempre las consultas
         baseDatosLEctura.close()
-        println("vale metodo consultar")
         return usuarioEncontrado
 
     }
@@ -92,7 +90,6 @@ class ESqliteHelperUsuario(
             )
             )
         conexionEscritura.close()
-        println("vale metodo eliminar")
         return if(resultadoEliminacion.toInt() == -1) false else true
     }
 
@@ -115,7 +112,6 @@ class ESqliteHelperUsuario(
                 ) //Parametros consultar Where
             )
         conexionEscritura.close()
-        println("vale  metodo actualizar")
         return if (resultadoActualizacion == -1) false else true
     }
 

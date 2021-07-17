@@ -53,7 +53,6 @@ class BListView : AppCompatActivity() {
                 )
 
                 val opciones = resources.getStringArray(R.array.string_array_optiones_dialogo)
-
                 builder.setMultiChoiceItems(
                     opciones,
                     seleccionUsuario,

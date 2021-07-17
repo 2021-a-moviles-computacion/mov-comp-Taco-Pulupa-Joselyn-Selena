@@ -57,6 +57,11 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_base_datos
         )
         botonIrBaseDeDatos.setOnClickListener{abrirActividad(CrudBaseDatos::class.java)}
+
+        val botonAbrirRecyclerView = findViewById<Button>(
+            R.id.btn_ir_recycler_view
+        )
+        botonAbrirRecyclerView.setOnClickListener{abrirActividad(GRecyclerView::class.java)}
     }
 
     fun abrirActividad(

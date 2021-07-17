@@ -40,11 +40,11 @@ class CrudBaseDatos : AppCompatActivity() {
         botonBuscarUsuario.setOnClickListener {
             if(EBaseDeDatos.TablaUsuario != null){
                 val usuario = EBaseDeDatos.TablaUsuario!!.consultarUsuarioPorId(id.text.toString().toInt())
+                id.setText(usuario.id.toString())
+                nombre.setText(usuario.nombre.toString())
+                descripcion.setText(usuario.descripcion.toString())
                 Log.i("bdd", "${usuario.nombre} y ${usuario.descripcion}")
             }
-            id.setText("")
-            nombre.setText("")
-            descripcion.setText("")
         }
 
         val botonActualizarUsuario = findViewById<Button>(
@@ -70,7 +70,7 @@ class CrudBaseDatos : AppCompatActivity() {
         botonEliminarUsuario.setOnClickListener {
             if(EBaseDeDatos.TablaUsuario != null){
                 EBaseDeDatos.TablaUsuario!!.eliminarUsuarioPorId(id.text.toString().toInt())
-                Log.i("bdd", "${nombre.text} y ${descripcion.text}")
+                Log.i("bdd", "${id.text}")
             }
             id.setText("")
             nombre.setText("")
