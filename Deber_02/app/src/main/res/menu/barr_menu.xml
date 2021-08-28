@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_buscar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Buscar"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_mas"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="Mas" />
+    <item
+        android:id="@+id/mnu_not"
+        android:icon="@drawable/ic_outline_comment_24"
+        android:title="Notificaciones"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_yo"
+        android:icon="@drawable/ic_user"
+        android:title="Yo"
+        android:visible="true" />
+</menu>
