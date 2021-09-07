@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1074400802853",
+    "project_id": "mov-com-2021-taco-joselyn",
+    "storage_bucket": "mov-com-2021-taco-joselyn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074400802853:android:3d4314894383af661267cc",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074400802853-eanb9soclbbv4jio61tu9490sp46c8id.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpaqMSAwPmMDs0kP95-7C-fNQiWlD9dEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074400802853-eanb9soclbbv4jio61tu9490sp46c8id.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
