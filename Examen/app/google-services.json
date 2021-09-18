@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293868936917",
+    "project_id": "examen-joselyn-taco",
+    "storage_bucket": "examen-joselyn-taco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293868936917:android:209f9c3feb432b7e8b8c5c",
+        "android_client_info": {
+          "package_name": "com.example.examen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293868936917-21ojsorq9a7nllj91k8v88cq6jon4tlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCok8cjoKfztlug_TSFae0W-utify35SYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293868936917-21ojsorq9a7nllj91k8v88cq6jon4tlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
