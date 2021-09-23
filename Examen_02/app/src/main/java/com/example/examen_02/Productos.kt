@@ -179,7 +179,7 @@ class Productos : AppCompatActivity() {
                         arregloProducto.get(posicionItemSeleccionado).longitudText)
                     ))
                 )
-                irActividad(Productos::class.java)
+                //irActividad(Productos::class.java)
 
                 Log.i("bdd", "Editar ${arregloProducto.get(posicionItemSeleccionado).latitudText}")
                 return true

@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity() {
                         arregloProveedores.get(posicionItemSeleccionado).estado)
                     ))
                 )
-                irActividad(MainActivity::class.java)
+               // irActividad(MainActivity::class.java)
 
                 Log.i("bdd", "Editar ${arregloProveedores.get(posicionItemSeleccionado).id}")
 
